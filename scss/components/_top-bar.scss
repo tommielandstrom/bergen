@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Foundation top-bar
+   ========================================================================== */
+.top-search-bar {
+	i:before {content: "\f16c"; font-family: "foundation-icons";
+	}
+	&.highlight i:before {content: "\f21a"}
+	&.highlight a {background: $primary-color !important;}
+}	
+.search-bar-content {
+	background: #272727;
+	#s{
+		display: inline-block;
+		background: #272727 !important;
+		margin: 0px;
+		border: none;
+		color: #fff;
+		
+}	
+::-webkit-input-placeholder { color:#fff; }
+::-moz-placeholder { color:#fff; } /* firefox 19+ */
+:-ms-input-placeholder { color:#fff; } /* ie */
+input:-moz-placeholder { color:#fff; }
+.search {display: none;}
+}
+
+#site-logo img {max-height: $topbar-height; overflow: hidden; padding: 5px 0px}
+
+
+
+.top-bar, .top-bar-section ul li a {text-transform: uppercase;}

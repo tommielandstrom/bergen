@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Banner
+   ========================================================================== */
+
+.site-cover { 
+	
+	overflow: hidden; 
+
+	.site-cover-background {
+		background: no-repeat center;
+		background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-color: $secondary-color;
+		display: table;
+		width: 100%;
+
+		@media #{$small-only} { min-height: 200px;}
+		@media #{$medium-only} { min-height: 300px;}
+		@media #{$large-up} { min-height: 400px;}
+
+	}
+	
+	.header-inner { 
+		   display: table-cell;
+		   text-align: center;
+		   vertical-align: middle;
+	}
+
+	.site-info {
+		display: inline-block;
+		padding: rem-calc(30);
+		background: rgba(0,0,0,0.8);
+	
+		.site-title { 
+			width: 100%; 
+			text-align: center; 
+			text-transform: uppercase;
+		
+			a {
+				color: #FFF;
+			}
+		}
+				
+		.site-description {
+			text-align: center;
+		}
+	}
+}

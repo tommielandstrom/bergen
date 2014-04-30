@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Image 
+   ========================================================================== */
+
+figure.attachment {
+	margin: 0 auto;
+	display: table;
+	figcaption {
+		font-size: rem-calc(14);
+		line-height: 1.4;
+		font-style: italic;
+		padding: 8px 10px;
+		color: #999;
+		margin-bottom: $panel-margin-bottom;
+		display: table-caption;
+		caption-side: bottom;
+	}
+}
+
+

@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Breadcrumbs
+   ========================================================================== */
+.nav-breadcrumbs {
+	background: $secondary-color;
+}
+.yoast-breadcrumbs {
+	  @include crumb-container;
+	  padding: rem-calc(15 0);
+	  color: $crumb-slash-color;
+	  font-size: $crumb-font-size;
+	  font-weight: 600;
+	  background: none;
+	 span span:first-child > a:before {
+				    content: '\f15a';
+				    font-family: "foundation-icons";
+				    padding-right: $crumb-side-padding / 2;
+			    }
+
+	    span span {
+		    font-size: rem-calc(12);
+		    color: $crumb-font-color;
+		    text-transform: $crumb-font-transform;
+		    padding: 0 $crumb-side-padding;
+		    &:first-child {padding-left: 0px;}
+		    &:last-child { color: $crumb-font-color-current; padding-right: 0px; }
+	    }
+
+}

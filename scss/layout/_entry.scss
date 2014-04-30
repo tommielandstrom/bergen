@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Entry
+   ========================================================================== */
+
+.hentry {
+	
+	border-bottom: 1px none #ddd;
+	margin-bottom: rem-calc(32);
+	
+	&:last-child { border-bottom: none; }
+	
+	// Entry header	
+	.entry-header { 
+		
+		margin-bottom: rem-calc(10); 
+	
+		.entry-title { 
+			margin-bottom: rem-calc(0);
+			-ms-word-wrap: break-word;
+word-wrap: break-word;
+			a { 
+				
+				&:hover {}
+			}
+			 
+		}
+
+		.entry-thumbnail img {
+			display: block;
+			margin: 0 auto 10px;
+		}
+
+	}	
+	
+	.entry-meta {
+		
+		ul { 
+			margin: 0px;
+			
+			li {
+				display: inline; 
+				margin-right: rem-calc(20);
+					&:last-child {
+						margin-right: 0;
+					}
+			}
+			
+			* {
+				font-size: rem-calc(14);
+				text-transform: uppercase;
+				font-weight: 600;
+				
+			}
+		}
+	
+		.author, vcard { padding: 0px; border: none; font-weight: normal;}
+	
+	}
+	
+	.entry-content {
+		
+		.lead {}		
+	}
+	
+	.admin-entry-meta * {
+		color: gray;
+	}
+		
+	// Entry footer
+	 .entry-footer {
+		 margin: rem-calc(10 0);
+	 }
+}
+
+	.post-password-required {
+		input[type="submit"] {@include button($button-tny); }
+	}
+
+

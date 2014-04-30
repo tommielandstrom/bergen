@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Snippets
+   ========================================================================== */
+
+
+//
+// Override th default text selection color. 
+//Credit: http://css-tricks.com/snippets/css/change-text-selection-color/
+//
+
+/* Mozilla based browsers */
+::-moz-selection {
+       background-color: $primary-color;
+       color: #fff;
+}
+/* Works in Safari */
+::selection {
+       background-color: $primary-color;
+       color: #fff;
+}
+
+//
+// Fix admin bar issue, by bybe on Github
+//
+.admin-bar > .fixed {
+	margin-top: rem-calc(32);
+}
+
+.f-topbar-fixed > .container {
+	margin-top: rem-calc(32);
+}
+
+
+
+

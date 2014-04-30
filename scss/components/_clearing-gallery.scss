@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Foundation clearing gallery
+   ========================================================================== */
+
+//
+// Combine Clearing and block-grid
+//
+.clearing-block-grid {
+	li {
+	clear: none !important;
+	margin-right: 0;
+	}	
+	img {
+	width: 100%;
+	}
+}

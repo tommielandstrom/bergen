@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Frontpage
+   ========================================================================== */
+
+#welcome {	padding: $section-padding 0px;
+
+}
+
+#welcome2 {	
+.welcome-overlay { 
+   position: relative; 
+}
+
+.text { 
+   position: absolute; 
+   top: 30%; 
+   width: 100%;
+}
+}
+
+#page-info {
+	padding: $section-padding 0px;
+	h1 { font-size: rem-calc(90); color: $primary-color;}
+	.fi-* {font-size: rem-calc(32);}
+}
+
+#portfolio {
+	padding: $section-padding 0px;
+	background: #f6f6f6;
+	
+	li {padding-bottom: 0px;}
+	
+	.img-hover {
+		
+		&:hover {background-color: aqua;}
+	}
+}
+
+#news {	padding: $section-padding 0px;
+	
+}
+

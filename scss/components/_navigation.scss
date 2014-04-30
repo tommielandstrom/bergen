@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+// page-nav
+.page-nav-panel {@include panel($padding:20px 0px);
+
+}
+.page-nav {
+	li {
+		&.heading {padding: 0px $panel-padding;}	
+		a { 
+		display: block;
+		padding: 0px $panel-padding;
+		text-decoration: none;
+		text-transform: capitalize;
+
+		&:hover {}
+		}
+		ul.children li a {padding-left: $panel-padding + rem-calc(5);}
+	}
+}
+
+// Navvigation: Post, Page, Image
+.image-navigation,
+.post-navigation, 
+.paging-navigation { 	
+	
+	@extend .clearfix;	
+	padding: $content-padding 0;
+	
+	.nav-links {
+		a {@include button($button-tny); }
+		.nav-previous {float: left;}
+		.nav-next {float: right;}
+	}
+}

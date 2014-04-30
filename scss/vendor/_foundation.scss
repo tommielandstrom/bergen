@@ -1,0 +1,56 @@
+
+
+/* 
+FOUNDATION COMPONENTS
+ */
+
+button, .button {text-transform: uppercase;}
+
+// Accordion Open close marker
+.accordion.plus > dd { 
+				 &.active > a:before {
+					content: "\f176";
+					font-family: "foundation-icons";
+					float: right;
+				}
+				> a:before {
+					content: "\f199";
+					font-family: "foundation-icons";
+					float: right;
+				}
+}
+
+.banner-image {width: 100%; margin: 0px;
+	img {width: 100%;}
+}
+
+.orbit-slides-container { 
+	li, img {min-width: 100% !important; }
+}
+
+// Orbit
+/*
+.orbit-container {
+	.orbit-timer {display: none;}
+	.orbit-bullets-container {display: none;}
+	.orbit-slides-container .orbit-caption {bottom: inherit; top: 0%; margin: auto; background: none; text-align: center; font-family: Fjalla one; color: #fff;}
+	.orbit-slides-container { 
+		li, img {min-width: 100% !important; }
+		.orbit-header {font-size: rem-calc(40); margin-bottom: 0px; text-transform: uppercase;}
+		.orbit-copy {display: none;}
+		.orbit-button {@include button($button-tny); font-weight: bold;}
+	}
+	
+	@media #{$medium-up} { 
+		.orbit-prev, .orbit-next, .orbit-bullets-container {display: true;}
+		.orbit-bullets-container {position: absolute; bottom: 0px; width: 100%;}
+		.orbit-slides-container { 
+				.orbit-caption {top: 20%;}
+				.orbit-header {font-size: rem-calc(80);}
+				.orbit-copy {display:inherit; font-size: rem-calc(30); }
+				.orbit-button {@include button;}
+		}
+	}
+
+}
+*/

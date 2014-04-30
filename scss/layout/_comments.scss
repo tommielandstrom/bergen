@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Comments
+   ========================================================================== */
+
+#comments {  
+	ol {list-style-type: none; margin: 0px;} 
+	.comment { @include grid-row(); }
+	.comment-body { 
+			@include grid-column($columns: 12, $collapse: true); 
+			margin-bottom: rem-calc(5); 
+			padding: rem-calc(10 0);
+			.comment-header { 
+					display: block;
+					img { 
+						float: left;
+						margin-right: 5px;
+					}
+				.comment-title {display: inline;}
+				.post-author-label {display: block; float: right;  @include label();}
+				.comment-edit-link {}
+				.comment-meta {
+					display: block;
+					font-size: rem-calc(14);
+					color: gray;
+					time {}
+					.comment-meta-item {}
+					.edit-link {}
+				}
+			}
+			.comment-reply-link {}
+
+		.comment-content {
+
+			padding: rem-calc(5 0);
+			:last-child{ margin-bottom: 0px;}
+		}
+	}
+	.children { 
+	@include grid-column($columns: 11, $offset: 1, $collapse: true);
+	}
+
+
+
+
+} // #comments
+
+	.comment-respond { 
+		@include grid-column($columns: 12, $collapse: true); 
+		margin-bottom: rem-calc(5);
+
+		.form-allowed-tags {}
+		.comment-form-comment label {display: none;}
+	}		

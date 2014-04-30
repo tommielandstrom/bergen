@@ -1,0 +1,119 @@
+/* SASS map
+http://www.sitepoint.com/architecture-sass-project/
+
+sass/ 
+| 
+|– base/ 
+|   |– _reset.scss       # Reset/normalize 
+|   |– _typography.scss  # Typography rules 
+|   ...                  # Etc… 
+| 
+|– components/ 
+|   |– _buttons.scss     # Buttons 
+|   |– _carousel.scss    # Carousel 
+|   |– _cover.scss       # Cover 
+|   |– _dropdown.scss    # Dropdown 
+|   |– _navigation.scss  # Navigation 
+|   ...                  # Etc… 
+| 
+|– helpers/ 
+|   |– _variables.scss   # Sass Variables 
+|   |– _functions.scss   # Sass Functions 
+|   |– _mixins.scss      # Sass Mixins 
+|   |– _helpers.scss     # Class & placeholders helpers 
+|   ...                  # Etc… 
+| 
+|– layout/ 
+|   |– _grid.scss        # Grid system 
+|   |– _header.scss      # Header 
+|   |– _footer.scss      # Footer 
+|   |– _sidebar.scss     # Sidebar 
+|   |– _forms.scss       # Forms 
+|   ...                  # Etc… 
+| 
+|– pages/ 
+|   |– _home.scss        # Home specific styles 
+|   |– _contact.scss     # Contact specific styles 
+|   ...                  # Etc… 
+| 
+|– themes/ 
+|   |– _theme.scss       # Default theme 
+|   |– _admin.scss       # Admin theme 
+|   ...                  # Etc… 
+| 
+|– vendors/ 
+|   |– _bootstrap.scss   # Bootstrap 
+|   |– _jquery-ui.scss   # jQuery UI 
+|   ...                  # Etc… 
+| 
+| 
+`– main.scss             # primary Sass file 
+
+
+ */
+
+
+// Base
+@import "normalize"; 															// import normalize, stay at top
+// Foundation components
+// Helpers
+@import "helpers/settings"; 													// Compass
+@import "helpers/variables"; 													// Compass
+@import "helpers/social-colors"; 												// Compass
+
+@import "compass/css3/shared"; 													// Note
+@import "compass/css3/border-radius";											// Note
+@import "compass/css3/transition";												// Note
+
+@import "foundation"; 															// Note
+
+@import "base/typography"; 														// import normalize, stay at top
+
+
+// Components
+@import "components/breadcrumbs"; 												// Note
+@import "components/clearing-gallery"; 											// Note
+@import "components/images"; 													// Note
+@import "components/lists"; 													// Note
+@import "components/navigation"; 												// Note
+@import "components/off-canvas"; 												// Note
+@import "components/pagination"; 												// Note
+@import "components/reveal-lightbox"; 											// Note
+@import "components/top-bar"; 													// Note
+@import "components/widgets"; 													// Note
+@import "components/wp-widgets"; 												// Note
+
+// Layout
+@import "layout/cover"; 														// Note
+@import "layout/comments"; 														// Note 
+@import "layout/entry"; 														// Note
+@import "layout/footer"; 														// Note
+@import "layout/header"; 														// Note
+@import "layout/sidebar"; 														// Note
+
+
+// Pages
+@import "pages/blog"; 															// Note
+@import "pages/contact"; 														// Note
+@import "pages/front-page";														// Note
+@import "pages/image";															// Note
+@import "pages/pages"; 															// Note
+@import "pages/posts"; 															// Note
+@import "pages/products"; 														// Note
+
+ 
+// Theme
+@import "theme/custom"; 														// Note
+
+// Vendor
+@import "vendor/foundation"; 													// Note
+@import "vendor/foundation-icon-extra"; 										// Note
+@import "vendor/overlay"; 														// Note
+@import "vendor/jetpack"; 														// Note
+@import "vendor/media-objects";													// Note
+@import "vendor/snippets"; 														// Note
+@import "../fonts/foundation-icons/foundation-icons.css"; 						// Load Font icons
+
+				
+ 
+

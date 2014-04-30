@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Jetpack
+   ========================================================================== */
+
+// http://jetpack.me/support/infinite-scroll/
+/* Hides navigation links and site footer when infinite scroll is active */
+.infinite-scroll .navigation,
+.infinite-scroll.neverending #footer {
+    display: none;
+}
+/* Shows the footer again in case all posts have been loaded */
+.infinity-end.neverending #footer {
+    display: block;
+}
+
+#infinite-handle { 
+	
+	text-align: center; 
+	
+	span { 
+		
+		@include button($button-tny);
+		
+		&:before {
+			content: '\f16b';
+			font-family: "foundation-icons";
+			margin-right: rem-calc(5);
+		}
+		
+		@media #{$medium-up} {
+			@include button;
+		}
+	}
+
+}
+.infinite-loader .spinner { margin: 0 auto;}
+
+
+// Jetpack contact form
+.contact-form .contact-submit { .pushbutton-wide {@include button($button-tny);}
+	
+}
+
+
+// Responsive Twitter widget
+#twitter-widget-0{
+   width: 100% !important;  
+}
+/* 
+Make the Facebook Like box responsive (fluid width)
+https://developers.facebook.com/docs/reference/plugins/like-box/ 
+*/
+
+/* 
+This element holds injected scripts inside iframes that in 
+some cases may stretch layouts. So, we're just hiding it. 
+*/
+
+#fb-root {
+    display: none;
+}
+
+/* To fill the container and nothing else */
+.widget_facebook_likebox iframe { width: 100% !important; }
+
+// Wordpress native gallery styling
+
+
+

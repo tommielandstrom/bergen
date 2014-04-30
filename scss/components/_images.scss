@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Images
+   ========================================================================== */
+
+
+article.post .entry-content {
+	@extend .clearfix;
+	img {max-width: 100%;}
+	// Add HTML5 Caption Class for Images
+	.post-figure {
+		margin: 0 auto;
+		display: table;
+		max-width: 100%;
+		.post-figcaption {
+			font-size: rem-calc(14);
+			line-height: 1.4;
+			font-style: italic;
+			padding: 8px 10px;
+			color: #999;
+			display: table-caption;
+			caption-side: bottom;
+		}
+	}
+	
+	.post-figure.alignright, img.alignright {
+		float: right;
+		margin: 0 0 18px 18px;
+	}
+	
+	.post-figure.alignleft, img.alignleft {
+		float: left;
+		margin: 0 18px 18px 0;
+	}
+
+
+
+}
+
+
+
+
+
+//
+// Extend Native wordpress gallery style with Foundation block grids
+//
+
+.gallery {  
+	@extend ul;
+	.gallery-item {@extend li; margin-top: 0px !important; overflow: hidden;}
+	img.attachment-thumbnail {margin:0px !important; border: none !important;}
+	&.gallery-columns-1 {@include block-grid(1);}
+	&.gallery-columns-2 {@include block-grid(2);}
+	&.gallery-columns-3 {@include block-grid(3);}
+	&.gallery-columns-4 {@include block-grid(4);}
+	&.gallery-columns-5 {@include block-grid(5);}
+	&.gallery-columns-6 {@include block-grid(6);}
+	&.gallery-columns-7 {@include block-grid(7);}
+	&.gallery-columns-8 {@include block-grid(8);}
+	&.gallery-columns-9 {@include block-grid(9);}
+	&.gallery-columns-8, &.gallery-columns-9 {.wp-caption-text {display: none;}}
+	
+	.gallery-icon {margin: 0px;}
+	.gallery-caption {
+;
+		font-size: rem-calc(14);
+		line-height: 1.4;
+		font-style: italic;
+		padding: 8px 10px;
+		color: #999;
+		display: none;
+		caption-side: bottom;
+		margin: 0px;
+	} 
+}

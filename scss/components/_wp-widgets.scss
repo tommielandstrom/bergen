@@ -1,0 +1,110 @@
+/* ==========================================================================
+   WP-widgets
+   ========================================================================== */
+ 
+.widget {
+	// http://www.sitepoint.com/use-webfont-icons-bullet-points-html5-lists/
+	font-size: rem-calc(14);
+	ul {
+		list-style-type: none;
+		list-style-position: outside; 
+		li { 
+			text-indent: -1.1em;	
+			&:before {
+				content: '\f198';
+				font-family: "foundation-icons";
+				color: darken($secondary-color, 30%);
+			    float: left;
+			    width: 1.1em;
+		    }
+	    }	
+	}
+}
+.widget_recent_entries ul > li:before { content: '\f12b';}
+.widget_categories ul > li:before { content: '\f108';}
+.widget_recent_comments ul > li:before { content: '\f131';}
+.widget_links ul > li:before { content: '\f165';}
+.widget_archive ul > li:before { content: '\f124';}
+
+.widget_tag_cloud .tagcloud {  
+	a {
+		@include label($text-size:$label-font-sizing !important);	
+		margin: 0 5px 5px 0;
+		&:hover {
+		background: #1abc9c;
+		text-decoration: none;
+		color: #FFF;
+		}
+	}
+}
+
+
+/* calendar widget */
+
+#wp-calendar {
+	color: #888;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+	font-size: 0.9em;
+	background: none;
+	border: none;
+	* { background: none; border: none;}
+}
+
+#wp-calendar a { color: #1abc9c; }
+
+#wp-calendar,
+#wp-calendar caption,
+#wp-calendar tr,
+#wp-calendar td,
+#wp-calendar th {
+	text-align: center;
+}
+
+#wp-calendar caption,
+#wp-calendar th,
+#wp-calendar td {
+	padding: 4% 2%;
+}
+
+#wp-calendar caption,
+#wp-calendar thead {
+	color: #666;
+	border-bottom: 1px solid #EEE;
+}
+
+#wp-calendar caption { text-transform: capitalize; }
+
+#wp-calendar thead th {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+
+#wp-calendar tfoot { border-top: 1px solid #EEE; }
+#wp-calendar tfoot td { padding: 0; }
+#wp-calendar tfoot #prev { text-align: left; }
+#wp-calendar tfoot #next { text-align: right; }
+
+#wp-calendar tfoot a {
+	display: block;
+	color: #999;
+	padding: 0.6em;
+}
+
+#wp-calendar tfoot a:hover {
+	text-decoration: none;
+	color: #1abc9c;
+	background: rgba(255, 255, 255, .05);
+}
+
+/* search widget */
+#searchform {
+	* {margin-bottom: 0px;}
+	#s {background: #fff; border-right: none;}
+  
+	#searchsubmit {
+	   i { font-size: rem-calc(20);}
+	}
+}

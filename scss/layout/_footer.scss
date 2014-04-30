@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+// FOOTER
+.site-footer {
+	.widget-footer {
+	background-color: $secondary-color;
+	padding: $section-padding 0px;
+	margin-top: 0px;
+	}
+	
+	.bottom-footer {
+		background-color: $topbar-bg-color;
+		color: lighten($topbar-bg-color, 30%);
+	//	height: $topbar-height;
+		padding: rem-calc(20) 0px;
+		#site-logo {display: inline;}
+		.footer-menu {display: inline;
+			li {display: inline;}
+		}
+		.copywright {
+			font-size: rem-calc(14);
+			display: block;
+		}
+		a {
+		color: #fff;
+			font-size: rem-calc(15);
+			&:hover, &:focus {
+				color: $body-font-color;
+			}
+		}
+	
+	}
+	
+}

@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Comments
+   ========================================================================== */
+html {
+  background: blue;
+}
+
+#comments {
+  background: gray !important;
+}
+#comments ol.comment-list {
+  background: gray;
+}
+#comments ol.comment-list .comment {
+  background: aqua;
+}
+#comments ol.comment-list .comment.parent children {
+  background: gray;
+}
+#comments ol.comment-list .comment.parent children .comment {
+  background: blue;
+}
